@@ -441,10 +441,11 @@ a.menu-link { display: none; }
 }
 
 /* For devices up to 812px width (e.g., iPhone X) */
+/* For devices up to 812px width (e.g., iPhone X) */
 @media screen and (max-width: 812px) {
   #bg-video {
     object-fit: cover;
-    height: 60vh; /* Decreased height */
+    height: 100vh; /* Original height retained */
     width: 100%;
   }
 
@@ -459,7 +460,7 @@ a.menu-link { display: none; }
   }
 
   .main-banner {
-    height: 60vh; /* Matches the video height */
+    height: 100vh; /* Matches the video height */
   }
 
   .main-banner .caption {
@@ -480,11 +481,11 @@ a.menu-link { display: none; }
   }
 
   .main-banner .caption h2 {
-    font-size: 28px;
-    font-weight: 800;
-    color: #fff;
+    font-size: 36px; /* Adjusted for better readability */
     margin-top: 15px;
     margin-bottom: 15px;
+    font-weight: 800;
+    color: #fff;
     letter-spacing: 1px;
   }
 
@@ -502,7 +503,7 @@ a.menu-link { display: none; }
 @media screen and (max-width: 480px) {
   #bg-video {
     object-fit: cover;
-    height: 50vh; /* Further reduced height for very small devices */
+    height: 100vh; /* Original height retained */
     width: 100%;
   }
 
@@ -517,7 +518,7 @@ a.menu-link { display: none; }
   }
 
   .main-banner {
-    height: 50vh; /* Matches the video height */
+    height: 100vh; /* Matches the video height */
   }
 
   .main-banner .caption {
@@ -530,7 +531,7 @@ a.menu-link { display: none; }
   }
 
   .main-banner .caption h6 {
-    font-size: 14px;
+    font-size: 14px; /* Slightly smaller font for readability */
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
@@ -538,7 +539,7 @@ a.menu-link { display: none; }
   }
 
   .main-banner .caption h2 {
-    font-size: 22px; /* Smaller font size for very small screens */
+    font-size: 28px; /* Adjusted for smaller screens */
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 800;
