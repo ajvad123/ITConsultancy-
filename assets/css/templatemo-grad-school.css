@@ -440,6 +440,63 @@ a.menu-link { display: none; }
   }
 }
 
+@media screen and (max-width: 812px) {
+  /* Ensure the video fits properly */
+  #bg-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cover the container */
+  }
+
+  /* Video Overlay adjustments */
+  .video-overlay {
+    background-color: rgba(22, 34, 57, 0.85); /* Keep the overlay darker */
+    padding: 20px; /* Provide padding to make content more visible */
+  }
+
+  /* Caption adjustments */
+  .main-banner .caption {
+    text-align: center;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-banner .caption h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .main-banner .caption h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .main-banner .caption h2 em {
+    color: #f5a425;
+    font-weight: 900;
+  }
+
+  /* Optional: Adjust the button size for smaller screens */
+  .main-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* Make sure the video does not overflow */
+  .main-banner {
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+  }
+}
+
+
 @media screen and (max-width: 480px) {
   /* Ensure the video still fills the screen and remains responsive */
   #bg-video {
