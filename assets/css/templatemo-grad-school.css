@@ -376,6 +376,70 @@ a.menu-link { display: none; }
   }
 
 }
+@media screen and (max-width: 767px) {
+  /* Ensure the video still fills the screen and remains responsive */
+  #bg-video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /* Adjust the video overlay for better visibility */
+  .video-overlay {
+    background-color: rgba(22, 34, 57, 0.85); /* Slightly transparent background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Adjust the caption for smaller screens */
+  .main-banner .caption {
+    position: absolute;
+    width: 90%; /* Slightly smaller width */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Centered content */
+    text-align: center;
+  }
+
+  .main-banner .caption h6 {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .main-banner .caption h2 {
+    font-size: 28px; /* Adjust size for smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .main-banner .caption h2 em {
+    color: #f5a425; /* Ensure the emphasis color stays intact */
+  }
+
+  /* Button styling adjustments for smaller screens */
+  .main-banner .main-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* Adjust the scroll-to-section link inside the button */
+  .scroll-to-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 
 
 /* Features */

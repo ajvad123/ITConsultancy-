@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-    
+
     <!--
       
   TemplateMo 557 Grad School
@@ -68,7 +68,7 @@
                 <li><a href="#section6">Carreers</a></li>
                 <li><a href="#section6">Contact us</a></li>
                 <li><a class="main-button" href="#section6">Login</a></li>
-                <button  id="header-button"
+                <button id="header-button"
                     style="background-color: yellow; color: black; border: none; padding: 5px 10px; font-size: 14px; cursor: pointer;">Get
                     a Quote</button>
 
@@ -181,17 +181,22 @@
         };
 
         $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-            if ($(e.target).hasClass('external')) {
+            var targetHref = $(this).attr('href');
+
+            // Check if the target is an internal page link or external URL
+            if (targetHref.endsWith('.html')) {
+                // If it's a link to another HTML page, let the browser handle the navigation
                 return;
             }
-            e.preventDefault();
-            $('#menu').removeClass('active');
-            showSection($(this).attr('href'), true);
+
+            // If it's an internal section link (like #section1), apply smooth scrolling
+            if (!$(e.target).hasClass('external')) {
+                e.preventDefault();
+                $('#menu').removeClass('active');
+                showSection(targetHref, true);
+            }
         });
 
-        $(window).scroll(function () {
-            checkSection();
-        });
     </script>
 
 </body>

@@ -26,127 +26,147 @@ TemplateMo 557 Grad School
 https://templatemo.com/tm-557-grad-school
 
 -->
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  .section {
-    padding: 40px 0;
-  }
+    .section {
+      padding: 40px 0;
+    }
 
-  .section-heading h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
-    color: #333;
-  }
+    .section-heading h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #333;
+    }
 
-  #tabs ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-
-  #tabs ul li {
-    margin-right: 15px;
-  }
-
-  #tabs ul li:last-child {
-    margin-right: 0;
-  }
-
-  #tabs ul li a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px 15px;
-    display: block;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  #tabs ul li a:hover {
-    background-color: #f0f0f0;
-    border-color: #ccc;
-  }
-
-  .tabs-content article {
-    display: none;
-    margin-top: 20px;
-  }
-
-  .tabs-content article.active {
-    display: block;
-  }
-
-  @media (max-width: 768px) {
     #tabs ul {
-      flex-direction: column;
-      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
     }
 
     #tabs ul li {
-      margin-bottom: 10px;
+      margin-right: 15px;
     }
 
     #tabs ul li:last-child {
-      margin-bottom: 0;
+      margin-right: 0;
     }
 
-  }
-  @media (max-width: 992px) { /* For medium devices (tablets, etc.) */
-  #tabs ul {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start;
-  }
+    #tabs ul li a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px 15px;
+      display: block;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
 
-  #tabs ul li {
-    margin-bottom: 10px; /* Add spacing between items */
-    margin-right: 0; /* Remove horizontal margin */
-  }
-  
-}
+    #tabs ul li a:hover {
+      background-color: #f0f0f0;
+      border-color: #ccc;
+    }
 
-@media (max-width: 992px) { /* For medium devices (tablets, etc.) */
-  #tabs ul {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align the list items */
-    justify-content: center; /* Center the items within the container */
-  }
+    .tabs-content article {
+      display: none;
+      margin-top: 20px;
+    }
 
-  #tabs ul li {
-    margin-bottom: 10px; /* Add spacing between items */
-    margin-right: 0; /* Remove horizontal margin */
-  }
-}
+    .tabs-content article.active {
+      display: block;
+    }
 
-@media (max-width: 576px) { /* For small devices (mobile phones) */
-  #tabs ul {
-    flex-direction: column; /* Stack items vertically */
-    align-items: stretch; /* Make items fill the width */
-  }
+    @media (max-width: 768px) {
+      #tabs ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  #tabs ul li {
-    margin-bottom: 10px; /* Add spacing between items */
-    margin-right: 0; /* Remove horizontal margin */
-  }
+      #tabs ul li {
+        margin-bottom: 10px;
+      }
 
-  #tabs ul li a {
-    text-align: center; /* Center-align the text */
-    width: 100%; /* Make links take up full width */
-  }
-}
+      #tabs ul li:last-child {
+        margin-bottom: 0;
+      }
 
-</style>
+    }
+
+    @media (max-width: 992px) {
+
+      /* For medium devices (tablets, etc.) */
+      #tabs ul {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+      }
+
+      #tabs ul li {
+        margin-bottom: 10px;
+        /* Add spacing between items */
+        margin-right: 0;
+        /* Remove horizontal margin */
+      }
+
+    }
+
+    @media (max-width: 992px) {
+
+      /* For medium devices (tablets, etc.) */
+      #tabs ul {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center-align the list items */
+        justify-content: center;
+        /* Center the items within the container */
+      }
+
+      #tabs ul li {
+        margin-bottom: 10px;
+        /* Add spacing between items */
+        margin-right: 0;
+        /* Remove horizontal margin */
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      /* For small devices (mobile phones) */
+      #tabs ul {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: stretch;
+        /* Make items fill the width */
+      }
+
+      #tabs ul li {
+        margin-bottom: 10px;
+        /* Add spacing between items */
+        margin-right: 0;
+        /* Remove horizontal margin */
+      }
+
+      #tabs ul li a {
+        text-align: center;
+        /* Center-align the text */
+        width: 100%;
+        /* Make links take up full width */
+      }
+    }
+  </style>
 
 </head>
 
@@ -161,8 +181,8 @@ https://templatemo.com/tm-557-grad-school
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
+        <li> <a href="index.html">Home</a> </li>
+        <li><a href="about.html">About</a> </li>
         <li class="has-submenu"><a href="#section2">Services</a>
           <ul class="sub-menu">
             <li><a href="#section2">Consulting</a></li>
@@ -311,22 +331,34 @@ https://templatemo.com/tm-557-grad-school
                   </div>
                   <div class="col-md-6">
                     <h4>Artificial Intelligence</h4>
-                    <p>Artificial Intelligence (AI) is transforming the way we live and work by enabling machines to learn, reason, and solve problems. It powers technologies like virtual assistants, autonomous vehicles, and advanced data analytics, revolutionizing industries and improving efficiency.</p>
-                    <p>By leveraging AI, businesses can gain insights from large datasets, automate repetitive tasks, and enhance decision-making processes. As AI continues to evolve, it presents exciting opportunities for innovation and growth across various sectors.</p>
+                    <p>Artificial Intelligence (AI) is transforming the way we live and work by enabling machines to
+                      learn, reason, and solve problems. It powers technologies like virtual assistants, autonomous
+                      vehicles, and advanced data analytics, revolutionizing industries and improving efficiency.</p>
+                    <p>By leveraging AI, businesses can gain insights from large datasets, automate repetitive tasks,
+                      and enhance decision-making processes. As AI continues to evolve, it presents exciting
+                      opportunities for innovation and growth across various sectors.</p>
                   </div>
-                  
+
               </article>
               <article id="tabs-2">
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="https://kwicksys.com/wp-content/uploads/2024/10/Digital-Transformation-jpg-555-429-380x292.jpg" alt="">
+                    <img
+                      src="https://kwicksys.com/wp-content/uploads/2024/10/Digital-Transformation-jpg-555-429-380x292.jpg"
+                      alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Digital Transformation</h4>
-                    <p>Digital Transformation is the integration of digital technology into all areas of business, fundamentally changing how organizations operate and deliver value to their customers. It involves adopting innovations such as cloud computing, AI, and data analytics to streamline processes and improve efficiency.</p>
-                    <p>Organizations embracing digital transformation can gain a competitive edge by enhancing customer experiences, improving agility, and driving new revenue opportunities. It's not just about technology but also a cultural shift that requires businesses to continually adapt and innovate.</p>
+                    <p>Digital Transformation is the integration of digital technology into all areas of business,
+                      fundamentally changing how organizations operate and deliver value to their customers. It involves
+                      adopting innovations such as cloud computing, AI, and data analytics to streamline processes and
+                      improve efficiency.</p>
+                    <p>Organizations embracing digital transformation can gain a competitive edge by enhancing customer
+                      experiences, improving agility, and driving new revenue opportunities. It's not just about
+                      technology but also a cultural shift that requires businesses to continually adapt and innovate.
+                    </p>
                   </div>
-                  
+
                 </div>
               </article>
               <article id="tabs-3">
@@ -336,36 +368,52 @@ https://templatemo.com/tm-557-grad-school
                   </div>
                   <div class="col-md-6">
                     <h4>Innovation</h4>
-                    <p>Innovation is the driving force behind progress, enabling businesses and individuals to solve problems, create new opportunities, and improve lives. It fosters creativity and pushes boundaries, leading to groundbreaking ideas and solutions that shape the future.</p>
-                    <p>By embracing innovation, organizations can stay competitive, adapt to changing market demands, and deliver exceptional value to their customers. It is not just about new technology but also about rethinking processes, strategies, and experiences to achieve continuous improvement.</p>
+                    <p>Innovation is the driving force behind progress, enabling businesses and individuals to solve
+                      problems, create new opportunities, and improve lives. It fosters creativity and pushes
+                      boundaries, leading to groundbreaking ideas and solutions that shape the future.</p>
+                    <p>By embracing innovation, organizations can stay competitive, adapt to changing market demands,
+                      and deliver exceptional value to their customers. It is not just about new technology but also
+                      about rethinking processes, strategies, and experiences to achieve continuous improvement.</p>
                   </div>
-                  
+
                 </div>
               </article>
               <article id="tabs-4">
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="https://kwicksys.com/wp-content/uploads/2024/10/Cyber-Security-JPG-555-429-380x292.jpg" alt="">
+                    <img src="https://kwicksys.com/wp-content/uploads/2024/10/Cyber-Security-JPG-555-429-380x292.jpg"
+                      alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Cyber Security</h4>
-                    <p>Cyber Security is essential in protecting systems, networks, and data from cyber threats and attacks. In today’s digital world, safeguarding sensitive information is crucial for individuals and organizations to maintain privacy and prevent unauthorized access.</p>
-                    <p>By implementing robust security measures such as firewalls, encryption, and threat detection systems, businesses can reduce vulnerabilities and ensure the safety of their operations. Cyber Security is not just about technology—it’s about cultivating awareness and building a culture of proactive defense against ever-evolving threats.</p>
+                    <p>Cyber Security is essential in protecting systems, networks, and data from cyber threats and
+                      attacks. In today’s digital world, safeguarding sensitive information is crucial for individuals
+                      and organizations to maintain privacy and prevent unauthorized access.</p>
+                    <p>By implementing robust security measures such as firewalls, encryption, and threat detection
+                      systems, businesses can reduce vulnerabilities and ensure the safety of their operations. Cyber
+                      Security is not just about technology—it’s about cultivating awareness and building a culture of
+                      proactive defense against ever-evolving threats.</p>
                   </div>
-                  
+
                 </div>
               </article>
               <article id="tabs-5">
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="https://kwicksys.com/wp-content/uploads/2024/10/Cloud-Computing-jpg-555-429-380x292.jpg" alt="">
+                    <img src="https://kwicksys.com/wp-content/uploads/2024/10/Cloud-Computing-jpg-555-429-380x292.jpg"
+                      alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Cloud Computing</h4>
-                    <p>Cloud Computing is revolutionizing how businesses and individuals store, access, and manage data and applications. By leveraging remote servers hosted on the internet, organizations can scale their operations, improve collaboration, and reduce infrastructure costs.</p>
-                    <p>With cloud services like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), businesses can enhance agility and innovation. Cloud Computing enables seamless access to resources anytime, anywhere, empowering businesses to stay competitive in a fast-paced digital world.</p>
+                    <p>Cloud Computing is revolutionizing how businesses and individuals store, access, and manage data
+                      and applications. By leveraging remote servers hosted on the internet, organizations can scale
+                      their operations, improve collaboration, and reduce infrastructure costs.</p>
+                    <p>With cloud services like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and
+                      Software as a Service (SaaS), businesses can enhance agility and innovation. Cloud Computing
+                      enables seamless access to resources anytime, anywhere, empowering businesses to stay competitive
+                      in a fast-paced digital world.</p>
                   </div>
-                  
+
                 </div>
               </article>
               <article id="tabs-6">
@@ -375,10 +423,16 @@ https://templatemo.com/tm-557-grad-school
                   </div>
                   <div class="col-md-6">
                     <h4>Big Data</h4>
-                    <p>Big Data refers to the vast amount of structured and unstructured data generated every day, which is too large or complex for traditional data-processing software to handle. By analyzing Big Data, businesses can uncover patterns, trends, and insights that can drive better decision-making and strategic planning.</p>
-                    <p>Organizations leveraging Big Data can gain a deeper understanding of customer behavior, optimize operations, and predict future trends. With the help of advanced analytics tools, companies can transform raw data into actionable insights, giving them a competitive edge in their respective industries.</p>
+                    <p>Big Data refers to the vast amount of structured and unstructured data generated every day, which
+                      is too large or complex for traditional data-processing software to handle. By analyzing Big Data,
+                      businesses can uncover patterns, trends, and insights that can drive better decision-making and
+                      strategic planning.</p>
+                    <p>Organizations leveraging Big Data can gain a deeper understanding of customer behavior, optimize
+                      operations, and predict future trends. With the help of advanced analytics tools, companies can
+                      transform raw data into actionable insights, giving them a competitive edge in their respective
+                      industries.</p>
                   </div>
-                  
+
                 </div>
               </article>
             </section>
@@ -396,19 +450,24 @@ https://templatemo.com/tm-557-grad-school
             <div>
               <h4>We Lead from the Front</h4>
               <p style="color: white;">At KwickSys, Our Team is Our Strength</p>
-              <p  style="color: white;">KwickSys offers a mix of in-depth business expertise and EBS or Cloud ERP solutions experience. The average experience of our consultants ranges from 5 to 20 years in Oracle, Fusion, JD Edwards, BI, Microsoft, and SAP.</p>
-              <p  style="color: white;">Our experts master project methodology and project management principles to ensure the successful delivery of projects on time and within budget. Once ‘live,’ many of our customers rely on us to maintain optimal performance by managing their environment and supporting their business users.</p>
+              <p style="color: white;">KwickSys offers a mix of in-depth business expertise and EBS or Cloud ERP
+                solutions experience. The average experience of our consultants ranges from 5 to 20 years in Oracle,
+                Fusion, JD Edwards, BI, Microsoft, and SAP.</p>
+              <p style="color: white;">Our experts master project methodology and project management principles to
+                ensure the successful delivery of projects on time and within budget. Once ‘live,’ many of our customers
+                rely on us to maintain optimal performance by managing their environment and supporting their business
+                users.</p>
               <div class="counter">
                 <div class="C-ha">
                   <div class="value">00+</div>
                   <span>HAPPY CLIENTS</span>
                 </div>
-  
+
                 <div class="C-ha">
                   <div class="value">00+</div>
                   <span>PROJECTS COMPLETED</span>
                 </div>
-  
+
                 <div class="C-ha">
                   <div class="value">00+</div>
                   <span>RUNNING PROJECTS</span>
@@ -431,12 +490,14 @@ https://templatemo.com/tm-557-grad-school
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email"
+                      required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                    <input name="phone-number" type="text" class="form-control" id="phone-number"
+                      placeholder="Your Phone Number" required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
@@ -451,29 +512,29 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </div>
   </section>
-  
- 
-  
+
+
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const counters = document.querySelectorAll('.counter .value');
-      
+
       // Target values for each counter
       const targets = [40, 175, 15];
-  
+
       // Check if counters have been animated already
       // Clear sessionStorage to allow re-animation on page load
       sessionStorage.removeItem('countersAnimated'); // Remove this line if you want to keep animation state across sessions
-  
+
       if (!sessionStorage.getItem('countersAnimated')) {
         counters.forEach((counter, index) => {
           let target = targets[index];
           let current = 0;
           const increment = target / 200; // How fast the counter increases
-  
+
           // Set initial value to "00+"
           counter.textContent = '00+';
-  
+
           function animateCount() {
             if (current < target) {
               current = Math.ceil(current + increment); // Increment value
@@ -484,7 +545,7 @@ https://templatemo.com/tm-557-grad-school
               sessionStorage.setItem('countersAnimated', 'true'); // Store animation state
             }
           }
-  
+
           animateCount(); // Start animation
         });
       } else {
@@ -495,7 +556,7 @@ https://templatemo.com/tm-557-grad-school
       }
     });
   </script>
-  
+
 
   <section class="section courses" data-section="section4">
     <div class="container-fluid">
@@ -810,17 +871,22 @@ https://templatemo.com/tm-557-grad-school
     };
 
     $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-      if ($(e.target).hasClass('external')) {
+    var targetHref = $(this).attr('href');
+    
+    // Check if the target is an internal page link or external URL
+    if (targetHref.endsWith('.html')) {
+        // If it's a link to another HTML page, let the browser handle the navigation
         return;
-      }
-      e.preventDefault();
-      $('#menu').removeClass('active');
-      showSection($(this).attr('href'), true);
-    });
+    }
 
-    $(window).scroll(function () {
-      checkSection();
-    });
+    // If it's an internal section link (like #section1), apply smooth scrolling
+    if (!$(e.target).hasClass('external')) {
+        e.preventDefault();
+        $('#menu').removeClass('active');
+        showSection(targetHref, true);
+    }
+});
+
   </script>
 </body>
 
