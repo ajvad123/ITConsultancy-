@@ -68,84 +68,88 @@ p {
 
 /* Buttons */
 
-.main-button a {
-    background-color: #f5a425;
-    color: #fff;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    padding: 12px 20px;
-    display: inline-block;
-    outline: none;
+a.menu-link {
+  display: none;
 }
 
-a.menu-link { display: none; }
-
 @media screen and (max-width: 950px) {
-  a.menu-link {
-    float: right;
-    display: block;
-    font-size: 36px;
-    color: #fff;
-    padding-right: 30px;
-    padding-top: 15px;
-  }
-  nav[role="navigation"] {
-    clear: both;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-  .js nav[role="navigation"] {
-    overflow: hidden;
-    max-height: 0;
-  }
-  nav[role="navigation"].active {
-    max-height: 20em;
-    height: 20em;
-    overflow-y: scroll;
-  }
-  nav[role="navigation"] ul {
-    top: 0;
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid rgba(250,250,250,0.25);
-    background-color: rgba(22,34,57,0.99);
-  }
-  nav[role="navigation"] li a {
-    display: block;
-    padding: 15px 0px;
-    border-bottom: 1px solid rgba(250,250,250,0.25);
-    text-align: center;
-    color: #fff;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.5;
-  }
-  nav[role="navigation"] li:hover a,
-  nav[role="navigation"] li.active a {
-      color: #f5a425;
-  }
-  
-  @media screen and (min-width: 951px) {
-    .js nav[role="navigation"] {
-      max-height: none;
-    }
+/* Make the menu icon visible and properly positioned */
+a.menu-link {
+  display: block;
+  position: absolute; /* Absolute positioning relative to the header */
+  top: 15px; /* Adjust vertical alignment */
+  right: 15px; /* Adjust horizontal alignment */
+  font-size: 36px; /* Ensure visibility on small screens */
+  color: #fff; /* Matches the header design */
+  z-index: 10; /* Ensure it appears above other elements */
+  cursor: pointer; /* Make it clickable */
+}
 
-    nav[role="navigation"] li {
-      display: inline-block;
-      margin: 0 0.25em;
-    }
-    nav[role="navigation"] li a {
-      border: 0;
-    }
-  }
+/* Adjust navigation menu */
+nav[role="navigation"] {
+  clear: both;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.js nav[role="navigation"] {
+  overflow: hidden;
+  max-height: 0;
+}
+
+nav[role="navigation"].active {
+  max-height: 20em;
+  height: 20em;
+  overflow-y: scroll;
+}
+
+/* Full-width menu for mobile */
+nav[role="navigation"] ul {
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(250, 250, 250, 0.25);
+  background-color: rgba(22, 34, 57, 0.99);
+}
+
+/* Styling for menu items */
+nav[role="navigation"] li a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+nav[role="navigation"] li:hover a,
+nav[role="navigation"] li.active a {
+  color: #f5a425;
+}
+}
+
+@media screen and (min-width: 951px) {
+/* Restore original navigation for larger screens */
+.js nav[role="navigation"] {
+  max-height: none;
+}
+
+nav[role="navigation"] li {
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+nav[role="navigation"] li a {
+  border: 0;
+}
 }
 
 /* Header */
